@@ -1,5 +1,7 @@
 package Generic;
 
+import util.ArrayHelper;
+
 public class GenericApp {
     public static void main(String[] args) {
         MyData<String> myDataString = new MyData<String>("Sandy");
@@ -14,5 +16,11 @@ public class GenericApp {
 
         System.out.println(pairStringInteger.getFirst());
         System.out.println(pairStringInteger.getSecond());
+
+        String[] names = {"Sandy", "Dwi", "Handoko", "Trapsilo"};
+        Integer[] values = {1, 2, 3, 4, 5};
+
+        System.out.println(ArrayHelper.<String>count(names));
+        System.out.println(ArrayHelper.<Integer>count(values));
     }
 }

@@ -71,3 +71,30 @@ public class Pair<T, U> {
     }
 }
 ```
+
+# Generic Method
+- Generic parameter type tidak hanya bisa digunakan pada class atau interface.
+- Kita juga bisa menggunakan generic parameter type di method.
+- Generic parameter type yang kita deklarasikan di method, hanya bisa diakses di method tersebut, tidak bisa digunakan di luar method.
+- Ini cocok jika kita ingin membuat generic method, tanpa harus mengubah deklarasi class.
+- Kode: Generic Method
+```java
+public class ArrayHelper {  
+    public static <T> int count(T[] array) {
+        return array.length;
+    }
+}
+```
+- Kode: Menggunakan Generic Method
+
+```java
+import util.ArrayHelper;
+
+public static void main(String[] args) {
+  String[] names = {"Sandy", "Dwi", "Handoko", "Trapsilo"};
+  Integer[] values = {1, 2, 3, 4, 5};
+
+  System.out.println(ArrayHelper.<String>count(names));
+  System.out.println(ArrayHelper.<Integer>count(values));
+}
+```
