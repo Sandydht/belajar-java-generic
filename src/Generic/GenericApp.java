@@ -1,0 +1,18 @@
+package Generic;
+
+public class GenericApp {
+    public static void main(String[] args) {
+        MyData<String> myDataString = new MyData<String>("Sandy");
+        MyData<Integer> myDataInteger = new MyData<Integer>(1);
+        var myDataBoolean = new MyData<Boolean>(true);
+
+        System.out.println(myDataString.getData());
+        System.out.println(myDataInteger.getData());
+        System.out.println(myDataBoolean.getData());
+
+        Pair<String, Integer> pairStringInteger = new Pair<String, Integer>("Sandy", 28);
+
+        System.out.println(pairStringInteger.getFirst());
+        System.out.println(pairStringInteger.getSecond());
+    }
+}
