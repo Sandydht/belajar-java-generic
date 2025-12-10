@@ -1,4 +1,4 @@
-package Generic;
+package core;
 
 public class MyData<T> {
     private T data;

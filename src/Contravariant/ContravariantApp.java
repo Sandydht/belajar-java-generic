@@ -1,6 +1,6 @@
 package Contravariant;
 
-import Generic.MyData;
+import core.MyData;
 
 public class ContravariantApp {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Generic;
+package core;
 
 public class Pair<T, U>{
     private T first;

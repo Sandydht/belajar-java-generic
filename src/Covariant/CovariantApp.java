@@ -1,6 +1,6 @@
 package Covariant;
 
-import Generic.MyData;
+import core.MyData;
 
 public class CovariantApp {
     public static void main(String[] args) {

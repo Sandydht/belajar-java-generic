@@ -1,5 +1,7 @@
 package Generic;
 
+import core.MyData;
+import core.Pair;
 import util.ArrayHelper;
 
 public class GenericApp {

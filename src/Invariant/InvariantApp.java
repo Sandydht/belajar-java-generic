@@ -1,6 +1,6 @@
 package Invariant;
 
-import Generic.MyData;
+import core.MyData;
 
 public class InvariantApp {
     public static void main(String[] args) {
